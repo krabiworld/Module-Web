@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from './views/Home.vue'
-import Dashboard from './views/Dashboard.vue'
-import About from './views/About.vue'
+import Home from './views/Home'
+import Commands from './views/Commands'
+import Stats from './views/Stats'
 
 Vue.use(VueRouter)
 
@@ -14,14 +14,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: Dashboard
+    path: '/commands',
+    name: 'commands',
+    component: Commands
   },
   {
-    path: '/about',
-    name: 'about',
-    component: About
+    path: '/stats',
+    name: 'stats',
+    component: Stats
   }
 ]
 

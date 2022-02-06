@@ -1,24 +1,19 @@
 <template>
   <v-container fill-height>
-    <v-row
-      justify="center"
-    >
+    <v-row justify="center">
       <div>
         <h2>
           Module
         </h2>
       </div>
       <v-responsive width="100%" />
-      <div class="pl-2 pr-2 mb-5 my-mt d-flex">
-        <h3
-          class="font-weight-light"
-          :style="{textAlign: 'center'}"
-        >
-          Simple Discord bot with moderation written on Java and JDA.
+      <div class="pl-2 pr-2 mb-5 mt-1">
+        <h3 class="font-weight-light text-center">
+          Multi-purpose Discord bot for your server!
         </h3>
       </div>
       <v-responsive width="100%" />
-      <div>
+      <div class="text-center">
         <v-btn
           elevation="2"
           color="orange"
@@ -31,7 +26,6 @@
         <v-btn
           elevation="2"
           color="primary"
-          to="/about"
         >
           Learn more
         </v-btn>
@@ -55,9 +49,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.my-mt {
-  margin-top: 2px;
-}
-</style>
