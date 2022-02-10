@@ -9,7 +9,7 @@
       <v-responsive width="100%" />
       <div class="pl-2 pr-2 mb-5 mt-1">
         <h3 class="font-weight-light text-center">
-          Multi-purpose Discord bot for your server!
+          {{ $t('home.description') }}
         </h3>
       </div>
       <v-responsive width="100%" />
@@ -17,17 +17,17 @@
         <v-btn
           elevation="2"
           color="orange"
-          class="mr-2"
+          class="mr-2 white--text"
           target="popup"
           @click="openInvite"
         >
-          Add to server
+          {{ $t('home.addToServer') }}
         </v-btn>
         <v-btn
           elevation="2"
           color="primary"
         >
-          Learn more
+          {{ $t('home.learnMore') }}
         </v-btn>
       </div>
     </v-row>

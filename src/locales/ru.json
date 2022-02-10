@@ -1,0 +1,29 @@
+{
+  "header": {
+    "commands": "Команды",
+    "stats": "Статистика",
+    "community": "Сообщество",
+    "lang": "Язык",
+    "offDarkTheme": "Выключить темную тему",
+    "onDarkTheme": "Включить темную тему"
+  },
+  "home": {
+    "description": "Многофункциональный Discord бот для вашего сервера!",
+    "addToServer": "Добавить на сервер",
+    "learnMore": "Подробнее"
+  },
+  "stats": {
+    "guilds": "Серверов",
+    "users": "Пользователей",
+    "channels": "Каналов",
+    "commandsExecuted": "Выполнено команд",
+    "shards": "Осколков"
+  },
+  "commands": {
+    "allCommands": "Все команды Module",
+    "commands": "команд",
+    "command": "Команда",
+    "description": "Описание:",
+    "usage": "Использование:"
+  }
+}
