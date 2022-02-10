@@ -10,52 +10,34 @@
   "dependencies": {
     "axios": "^0.25.0",
     "vue": "^2.6.14",
+    "vue-i18n": "^8.26.3",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.3",
     "vuetify": "^2.6.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "@vue/cli-plugin-babel": "^4.5.15",
-    "@vue/cli-plugin-eslint": "^4.5.15",
-    "@vue/cli-plugin-router": "^4.5.15",
     "@vue/cli-service": "^4.5.15",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "cache-loader": "^4.1.0",
-    "eslint": "^7.1.0",
-    "eslint-plugin-vue": "^6.2.2",
     "sass": "~1.32.13",
     "sass-loader": "^10.2.1",
     "vue-cli-plugin-vuetify": "^2.4.5",
     "vue-template-compiler": "^2.6.14",
-    "vuetify-loader": "^1.7.3",
-    "webpack": "^4.46.0"
+    "vuetify-loader": "^1.7.3"
   },
   "vue": {
     "transpileDependencies": [
       "vuetify"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "@vue/cli-plugin-babel/preset"
-    ]
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/recommended",
-      "@vue/standard"
     ],
-    "parserOptions": {
-      "ecmaVersion": 12,
-      "parser": "@babel/eslint-parser"
+    "pluginOptions": {
+      "i18n": {
+        "locale": "en",
+        "fallbackLocale": "ru",
+        "localeDir": "locales",
+        "enableInSFC": true,
+        "includeLocales": false,
+        "enableBridge": true
+      }
     }
   },
-  "browserslist": [
-    "defaults"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/HeadcrabJ/Module-Web.git"

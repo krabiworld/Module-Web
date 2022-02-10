@@ -1,33 +1,42 @@
 <template>
-  <v-container fill-height>
-    <v-row justify="center">
-      <StatsCard
-        :count="guilds"
-        text="Guilds"
-      />
-      <StatsCard
-        :count="users"
-        text="Users"
-      />
-      <StatsCard
-        :count="channels"
-        text="Channels"
-      />
-      <StatsCard
-        :count="commandsExecuted"
-        text="Commands executed"
-      />
-      <StatsCard
-        :count="shards"
-        text="Shards"
-      />
-    </v-row>
-  </v-container>
+  <div style="height: 100%">
+    <v-progress-linear
+      v-if="!shards"
+      indeterminate
+    />
+    <v-container
+      v-else
+      fill-height
+    >
+      <v-row justify="center">
+        <StatsCard
+          :count="guilds"
+          :text="$t('stats.guilds')"
+        />
+        <StatsCard
+          :count="users"
+          :text="$t('stats.users')"
+        />
+        <StatsCard
+          :count="channels"
+          :text="$t('stats.channels')"
+        />
+        <StatsCard
+          :count="commandsExecuted"
+          :text="$t('stats.commandsExecuted')"
+        />
+        <StatsCard
+          :count="shards"
+          :text="$t('stats.shards')"
+        />
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
 import axios from 'axios'
-import StatsCard from '@/components/StatsCard'
+import StatsCard from '../components/StatsCard.vue'
 import config from '../../config.json'
 
 export default {

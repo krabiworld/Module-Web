@@ -1,0 +1,29 @@
+{
+  "header": {
+    "commands": "Commands",
+    "stats": "Statistics",
+    "community": "Community",
+    "lang": "Language",
+    "offDarkTheme": "Turn off dark theme",
+    "onDarkTheme": "Turn on dark theme"
+  },
+  "home": {
+    "description": "Multi-purpose Discord bot for your server!",
+    "addToServer": "Add to server",
+    "learnMore": "Learn more"
+  },
+  "stats": {
+    "guilds": "Servers",
+    "users": "Users",
+    "channels": "Channels",
+    "commandsExecuted": "Commands executed",
+    "shards": "Shards"
+  },
+  "commands": {
+    "allCommands": "All commands of Module",
+    "commands": "commands",
+    "command": "Command",
+    "description": "Description:",
+    "usage": "Usage:"
+  }
+}

@@ -5,20 +5,21 @@
     <v-main>
       <router-view />
     </v-main>
+
+    <Footer />
   </v-app>
 </template>
 
 <script>
-import Header from '@/components/layout/Header'
+import Header from './components/layout/Header.vue'
+import Footer from './components/layout/Footer.vue'
 
 export default {
   name: 'App',
   components: {
+    Footer,
     Header
   },
-  data: () => ({
-    githubLink: 'https://github.com/HeadcrabJ/Module/'
-  }),
   computed: {
     getTheme () {
       return this.$vuetify.theme.dark ? 'dark' : 'light'
