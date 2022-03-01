@@ -16,7 +16,7 @@
     "guilds": "Серверов",
     "users": "Пользователей",
     "channels": "Каналов",
-    "commandsExecuted": "Выполнено команд",
+    "executedCommands": "Выполнено команд",
     "shards": "Осколков"
   },
   "commands": {
