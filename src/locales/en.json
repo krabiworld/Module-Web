@@ -16,7 +16,7 @@
     "guilds": "Servers",
     "users": "Users",
     "channels": "Channels",
-    "commandsExecuted": "Commands executed",
+    "executedCommands": "Executed commands",
     "shards": "Shards"
   },
   "commands": {
