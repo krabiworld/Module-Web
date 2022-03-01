@@ -119,7 +119,7 @@ export default {
   },
   methods: {
     init () {
-      axios.get(new URL('/commands', config.apiUrl).href).then(({ data }) => {
+      axios.get(new URL(`/commands/${this.$i18n.locale}`, config.apiUrl).href).then(({ data }) => {
         this.commands = data.commands
         this.categories = data.categories
       })
