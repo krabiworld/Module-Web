@@ -22,8 +22,8 @@
           :text="$t('stats.channels')"
         />
         <StatsCard
-          :count="commandsExecuted"
-          :text="$t('stats.commandsExecuted')"
+          :count="executedCommands"
+          :text="$t('stats.executedCommands')"
         />
         <StatsCard
           :count="shards"
@@ -51,7 +51,7 @@ export default {
     guilds: 0,
     users: 0,
     channels: 0,
-    commandsExecuted: 0,
+    executedCommands: 0,
     shards: 0
   }),
   mounted () {
@@ -63,7 +63,7 @@ export default {
         this.guilds = data.guilds
         this.users = data.users
         this.channels = data.channels
-        this.commandsExecuted = data.commandsExecuted
+        this.executedCommands = data.executedCommands
         this.shards = data.shards
       })
     }
