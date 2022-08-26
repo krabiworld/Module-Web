@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import fetch from 'node-fetch'
 import StatsCard from '../components/StatsCard.vue'
 import config from '../../config.json'
 
@@ -58,14 +58,15 @@ export default {
     this.setStats()
   },
   methods: {
-    setStats () {
-      axios.get(new URL('/stats', config.apiUrl).href).then(({ data }) => {
-        this.guilds = data.guilds
-        this.users = data.users
-        this.channels = data.channels
-        this.executedCommands = data.executedCommands
-        this.shards = data.shards
-      })
+    async setStats() {
+      const res = await fetch(new URL('/stats', config.apiUrl).href)
+      const json = await res.json()
+
+      this.guilds = json.guilds
+      this.users = json.users
+      this.channels = json.channels
+      this.executedCommands = json.executedCommands
+      this.shards = json.shards
     }
   }
 }
