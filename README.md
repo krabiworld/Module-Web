@@ -21,4 +21,4 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## License
-Module Web is licensed under the [AGPL v3](LICENSE)
+Module Web is licensed under the [MIT](LICENSE)

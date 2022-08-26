@@ -34,6 +34,5 @@ export default {
 }
 * {
   -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 </style>
