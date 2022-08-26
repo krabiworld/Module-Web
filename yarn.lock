@@ -754,6 +754,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn-walk@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "acorn-walk@npm:8.2.0"
+  checksum: 1715e76c01dd7b2d4ca472f9c58968516a4899378a63ad5b6c2d668bba8da21a71976c14ec5f5b75f887b6317c4ae0b897ab141c831d741dc76024d8745f1ad1
+  languageName: node
+  linkType: hard
+
 "acorn@npm:^6.4.1":
   version: 6.4.2
   resolution: "acorn@npm:6.4.2"
@@ -769,6 +776,15 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 1860f23c2107c910c6177b7b7be71be350db9e1080d814493fae143ae37605189504152d1ba8743ba3178d0b37269ce1ffc42b101547fdc1827078f82671e407
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.4.1":
+  version: 8.8.0
+  resolution: "acorn@npm:8.8.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 7270ca82b242eafe5687a11fea6e088c960af712683756abf0791b68855ea9cace3057bd5e998ffcef50c944810c1e0ca1da526d02b32110e13c722aa959afdc
   languageName: node
   linkType: hard
 
@@ -1141,12 +1157,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "axios@npm:0.25.0"
+"axios@npm:^0.27.2":
+  version: 0.27.2
+  resolution: "axios@npm:0.27.2"
   dependencies:
-    follow-redirects: ^1.14.7
-  checksum: 2a8a3787c05f2a0c9c3878f49782357e2a9f38945b93018fb0c4fd788171c43dceefbb577988628e09fea53952744d1ecebde234b561f1e703aa43e0a598a3ad
+    follow-redirects: ^1.14.9
+    form-data: ^4.0.0
+  checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
   languageName: node
   linkType: hard
 
@@ -1657,9 +1674,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001286":
-  version: 1.0.30001305
-  resolution: "caniuse-lite@npm:1.0.30001305"
-  checksum: dc27fb43e0f4af157d561dcb2ab83b732c59b58b14bfcfa5136ff7fa0c76ad200b5d9bdadb6737982812387d3f247eb5e7afb87cbdd331ccf717da6b544c3f5c
+  version: 1.0.30001383
+  resolution: "caniuse-lite@npm:1.0.30001383"
+  checksum: 1830129858510163f6acfbeaf258e0a84061091901ea349ee12541cc04997a25dc17d0ba731e8518711d87f0e08fee2a762aa89264d86be5f329300d0ff9d421
   languageName: node
   linkType: hard
 
@@ -1981,7 +1998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"combined-stream@npm:^1.0.6, combined-stream@npm:~1.0.6":
+"combined-stream@npm:^1.0.6, combined-stream@npm:^1.0.8, combined-stream@npm:~1.0.6":
   version: 1.0.8
   resolution: "combined-stream@npm:1.0.8"
   dependencies:
@@ -3515,13 +3532,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.7":
+"follow-redirects@npm:^1.0.0":
   version: 1.14.7
   resolution: "follow-redirects@npm:1.14.7"
   peerDependenciesMeta:
     debug:
       optional: true
   checksum: f6d03e5e30877431065bca0d1b2e3db93949eb799d368a5c07ea8a4b71205f0349a3f8f0191bf13a07c93885522834dca1dc8e527dc99a772c6911fba24edc5f
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.9":
+  version: 1.15.1
+  resolution: "follow-redirects@npm:1.15.1"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 6aa4e3e3cdfa3b9314801a1cd192ba756a53479d9d8cca65bf4db3a3e8834e62139245cd2f9566147c8dfe2efff1700d3e6aefd103de4004a7b99985e71dd533
   languageName: node
   linkType: hard
 
@@ -3536,6 +3563,17 @@ __metadata:
   version: 0.6.1
   resolution: "forever-agent@npm:0.6.1"
   checksum: 766ae6e220f5fe23676bb4c6a99387cec5b7b62ceb99e10923376e27bfea72f3c3aeec2ba5f45f3f7ba65d6616965aa7c20b15002b6860833bb6e394dea546a8
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -5719,17 +5757,17 @@ __metadata:
   resolution: "moduleweb@workspace:."
   dependencies:
     "@vue/cli-service": ^4.5.15
-    axios: ^0.25.0
+    axios: ^0.27.2
     sass: ~1.32.13
     sass-loader: ^10.2.1
     vue: ^2.6.14
-    vue-cli-plugin-vuetify: ^2.4.5
-    vue-i18n: ^8.26.3
+    vue-cli-plugin-vuetify: ^2.5.5
+    vue-i18n: ^8.27.2
     vue-meta: ^2.4.0
-    vue-router: ^3.5.3
-    vue-template-compiler: ^2.6.14
-    vuetify: ^2.6.3
-    vuetify-loader: ^1.7.3
+    vue-router: ^3.6.4
+    vue-template-compiler: 2.6.14
+    vuetify: ^2.6.9
+    vuetify-loader: ^1.9.2
   languageName: unknown
   linkType: soft
 
@@ -9021,19 +9059,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-cli-plugin-vuetify@npm:^2.4.5":
-  version: 2.4.5
-  resolution: "vue-cli-plugin-vuetify@npm:2.4.5"
+"vue-cli-plugin-vuetify@npm:^2.5.5":
+  version: 2.5.5
+  resolution: "vue-cli-plugin-vuetify@npm:2.5.5"
   dependencies:
     null-loader: ^4.0.1
     semver: ^7.1.2
     shelljs: ^0.8.3
+  peerDependencies:
+    webpack: ^4.0.0 || ^5.0.0
   peerDependenciesMeta:
     sass-loader:
       optional: true
     vuetify-loader:
       optional: true
-  checksum: 60032be1cc206a326ed8c7c3dec2504a8671970a58292e65f1231bf5259d9eb01b3d5cdb2f54859dc5feee50ebe5356cb3a95f0b0a0cd282c03c23b4e4da270e
+  checksum: f73377f9bad5cd4c9fb3e541e25ce75515035161700776627ea78b279a62ffc24e3cf72839fe879f137e71b1879994a7ec3fa582d00b169c42f4e3a0f454c138
   languageName: node
   linkType: hard
 
@@ -9044,10 +9084,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-i18n@npm:^8.26.3":
-  version: 8.27.0
-  resolution: "vue-i18n@npm:8.27.0"
-  checksum: 6d5af73e3ef219fa2948f508b2fcbee5d669459293f2fab2a08bebaad80f93b6190b0fcae7b5f7b1aa7eab61c896e6b2d4a7e52483282d64f9f5e1d9d0d3af10
+"vue-i18n@npm:^8.27.2":
+  version: 8.27.2
+  resolution: "vue-i18n@npm:8.27.2"
+  checksum: 1a84ec3253b1c5a0b7742d31636ac46ac1c900968f20df859e80b6fbf4545d5e86ac37cfac0e3c5fc056b5c8600cb6f5cec9d455646250677996bc1df8e6a8d2
   languageName: node
   linkType: hard
 
@@ -9094,10 +9134,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^3.5.3":
-  version: 3.5.3
-  resolution: "vue-router@npm:3.5.3"
-  checksum: 7b2cc0d41ff2a8ec3da45761f29e14d0998119f47e4887f54e17eb534f7b4823acb778302891b0aa3a10c62ae8ba999393d7891cc08d36f02ea87aa268e2a36c
+"vue-router@npm:^3.6.4":
+  version: 3.6.4
+  resolution: "vue-router@npm:3.6.4"
+  checksum: 4c86ad39283b90086bd58fd9bfb71b5def4fbf227211e6dceaa1c6957af3d6422d5391b7b9e3f257df3b59907473e5b48434fdede9a8f0a30ba02df9f637d233
   languageName: node
   linkType: hard
 
@@ -9111,7 +9151,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-template-compiler@npm:^2.6.14":
+"vue-template-compiler@npm:2.6.14":
   version: 2.6.14
   resolution: "vue-template-compiler@npm:2.6.14"
   dependencies:
@@ -9135,27 +9175,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.7.3":
-  version: 1.7.3
-  resolution: "vuetify-loader@npm:1.7.3"
+"vuetify-loader@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "vuetify-loader@npm:1.9.2"
   dependencies:
+    acorn: ^8.4.1
+    acorn-walk: ^8.2.0
     decache: ^4.6.0
     file-loader: ^6.2.0
     loader-utils: ^2.0.0
   peerDependencies:
-    vue-template-compiler: ^2.6.10
+    gm: ^1.23.0
+    pug: ^2.0.0 || ^3.0.0
+    sharp: "*"
+    vue: ^2.7.2
     vuetify: ^1.3.0 || ^2.0.0
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 81a31698101ec25e05bf36224af273c315a85787bb4ef41d0fe76f28c4c7d8d409f9ad75535b09b8ccae4cdef4e6fe80b19f148e23f351cd4fc36f9400049421
+  peerDependenciesMeta:
+    gm:
+      optional: true
+    pug:
+      optional: true
+    sharp:
+      optional: true
+  checksum: 4e04323092e017f37e641940269443434055e3b01ffb8f7f05b3e79c3ff477cda0fc4f2f2b095b51f4e1f5435c3264772477b49ac2cf0dcb8f0ac04b4f18418b
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.6.3":
-  version: 2.6.3
-  resolution: "vuetify@npm:2.6.3"
+"vuetify@npm:^2.6.9":
+  version: 2.6.9
+  resolution: "vuetify@npm:2.6.9"
   peerDependencies:
     vue: ^2.6.4
-  checksum: f50a4c9d22c578a6a3d0c7def9ac3741a146a65aaf997062bf963e7ad8b1b2479c122f3f594694bb00293baec6e081d2f73f97bebbc9ce10a01e36096478b088
+  checksum: 6644ba78adf6e7ab3b191c4d226cc016372f929217f5c23d556aa5b4d226224a1fb2e2c9841cf14036b9ec4b8edb75d33916aa67da05208a8125ba76019410e6
   languageName: node
   linkType: hard
 
