@@ -97,7 +97,7 @@
 </template>
 
 <script>
-import fetch from 'node-fetch'
+import axios from 'axios'
 import config from '../../config.json'
 
 export default {
@@ -118,12 +118,11 @@ export default {
     this.init()
   },
   methods: {
-    async init () {
-      const res = await fetch(new URL(`/commands/${this.$i18n.locale}`, config.apiUrl).href)
-      const json = await res.json()
-
-      this.commands = json.commands
-      this.categories = json.categories
+    init () {
+      axios.get(new URL(`/commands/${this.$i18n.locale}`, config.apiUrl).href).then(({ data }) => {
+        this.commands = data.commands
+        this.categories = data.categories
+      })
     },
     changeTheme () {
       if (this.$vuetify.theme.dark) {
