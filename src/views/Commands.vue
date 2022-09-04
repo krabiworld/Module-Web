@@ -102,9 +102,6 @@ import config from '../../config.json'
 
 export default {
   name: 'Commands',
-  metaInfo: {
-    title: 'Commands'
-  },
   data: () => ({
     commands: 0,
     categories: null
@@ -115,6 +112,8 @@ export default {
     }
   },
   mounted () {
+    document.title = 'Commands - Module';
+
     this.init()
   },
   methods: {

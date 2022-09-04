@@ -39,8 +39,11 @@ import config from '../../config.json'
 
 export default {
   name: 'Home',
-  metaInfo: {
+  /*metaInfo: {
     title: 'Home'
+  },*/
+  mounted() {
+    document.title = 'Home - Module';
   },
   methods: {
     openInvite: function () {
