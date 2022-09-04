@@ -44,9 +44,6 @@ export default {
   components: {
     StatsCard
   },
-  metaInfo: {
-    title: 'Statistics'
-  },
   data: () => ({
     guilds: 0,
     users: 0,
@@ -55,6 +52,8 @@ export default {
     shards: 0
   }),
   mounted () {
+    document.title = 'Statistics - Module';
+
     this.setStats()
   },
   methods: {
