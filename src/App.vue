@@ -1,5 +1,5 @@
 <template>
-  <v-app :style="{background: $vuetify.theme.themes[getTheme].background}">
+  <v-app :style="{background: $vuetify.theme.themes[getTheme].colors.background}">
     <Header />
 
     <v-main>
@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     getTheme () {
-      return this.$vuetify.theme.dark ? 'dark' : 'light'
+      return this.$vuetify.theme.current.dark ? 'dark' : 'light'
     }
   }
 }

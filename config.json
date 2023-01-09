@@ -1,5 +1,5 @@
 {
-  "inviteUrl": "",
-  "guildUrl": "",
-  "apiUrl": ""
+  "inviteUrl": "https://discord.com/oauth2/authorize",
+  "guildUrl": "https://discord.gg/",
+  "apiUrl": "https://discord.com/"
 }

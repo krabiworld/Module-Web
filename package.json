@@ -7,19 +7,20 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "vue": "^2.6.14",
-    "vue-i18n": "^8.27.2",
-    "vue-router": "^3.6.4",
-    "vuetify": "^2.6.10"
+    "@vue/compat": "^3.2.45",
+    "axios": "^1.2.2",
+    "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.6",
+    "vuetify": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.2.45",
     "sass": "~1.32.13",
     "sass-loader": "^10.2.1",
     "vue-cli-plugin-vuetify": "^2.5.5",
-    "vue-template-compiler": "2.6.14",
-    "vuetify-loader": "^1.9.2"
+    "webpack-plugin-vuetify": "^2.0.0"
   },
   "vue": {
     "transpileDependencies": [

@@ -35,19 +35,15 @@
           :href="guildUrl"
           target="_blank"
         >
-          <v-icon>mdi-discord</v-icon>
+          <v-icon icon="mdi-discord"></v-icon>
         </v-btn>
         <v-btn
           icon
           color="primary"
           @click="changeTheme()"
         >
-          <v-icon v-if="$vuetify.theme.dark">
-            mdi-white-balance-sunny
-          </v-icon>
-          <v-icon v-else>
-            mdi-weather-night
-          </v-icon>
+          <v-icon v-if="$vuetify.theme.current.dark" icon="mdi-white-balance-sunny"></v-icon>
+          <v-icon v-else icon="mdi-weather-night"></v-icon>
         </v-btn>
       </v-card-text>
 
@@ -68,8 +64,8 @@ export default {
   }),
   methods: {
     changeTheme () {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
-      localStorage.setItem('isDarkTheme', this.$vuetify.theme.dark.toString())
+      this.$vuetify.theme.dark = !this.$vuetify.theme.current.dark
+      localStorage.setItem('isDarkTheme', this.$vuetify.theme.current.dark.toString())
     }
   }
 }

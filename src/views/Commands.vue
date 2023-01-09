@@ -24,10 +24,8 @@
             v-for="category in categories"
             :key="category.name"
             :style="{background: changeTheme()}"
+            :title="category.name"
           >
-            <v-expansion-panel-header>
-              {{ category.name }}
-            </v-expansion-panel-header>
             <v-expansion-panel-content>
               <div
                 v-for="command in category.commands"
@@ -108,7 +106,7 @@ export default {
   }),
   computed: {
     isMobile () {
-      return this.$vuetify.breakpoint.xs
+      return this.$vuetify.display.xs
     }
   },
   mounted () {
@@ -124,10 +122,10 @@ export default {
       })
     },
     changeTheme () {
-      if (this.$vuetify.theme.dark) {
-        return this.$vuetify.theme.themes.dark.secondaryBackground
+      if (this.$vuetify.theme.current.dark) {
+        return this.$vuetify.theme.themes.dark.colors.background
       }
-      return this.$vuetify.theme.themes.light.secondaryBackground
+      return this.$vuetify.theme.themes.light.colors.background
     }
   }
 }
