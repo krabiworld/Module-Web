@@ -1,4 +1,5 @@
 # Module Web
+**The project is dead and no longer working!** (I'm too lazy to fix it)
 
 ## Project setup
 ```

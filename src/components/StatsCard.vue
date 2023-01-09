@@ -26,10 +26,10 @@ export default {
   },
   methods: {
     changeTheme () {
-      if (this.$vuetify.theme.dark) {
-        return this.$vuetify.theme.themes.dark.secondaryBackground
+      if (this.$vuetify.theme.current.dark) {
+        return this.$vuetify.theme.themes.dark.colors.background
       }
-      return this.$vuetify.theme.themes.light.secondaryBackground
+      return this.$vuetify.theme.themes.light.colors.background
     }
   }
 }
