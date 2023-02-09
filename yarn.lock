@@ -692,16 +692,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compat@npm:^3.2.45":
-  version: 3.2.45
-  resolution: "@vue/compat@npm:3.2.45"
+"@vue/compat@npm:^3.2.47":
+  version: 3.2.47
+  resolution: "@vue/compat@npm:3.2.47"
   dependencies:
     "@babel/parser": ^7.16.4
     estree-walker: ^2.0.2
     source-map: ^0.6.1
   peerDependencies:
-    vue: 3.2.45
-  checksum: 9fd33c1575797150469dd0196f22e7c0316b096048e5ccca92b583d491619d19cdcc0d287833b066e4c8e9fdd9f348b524339f699b065b60b9bf3a85413bfcd6
+    vue: 3.2.47
+  checksum: 3bd7bf6900ac34fa3caf076dd077d7e859f2b20373f5a50fdd174005bc81d40d1d262f63c25192e9920e4fff0668ac6f39f72b235f5ef973add7516148c1d7b5
   languageName: node
   linkType: hard
 
@@ -4224,7 +4224,7 @@ __metadata:
   resolution: "moduleweb@workspace:."
   dependencies:
     "@vue/cli-service": ^5.0.8
-    "@vue/compat": ^3.2.45
+    "@vue/compat": ^3.2.47
     "@vue/compiler-sfc": ^3.2.47
     axios: ^1.2.6
     sass: ^1.58.0
